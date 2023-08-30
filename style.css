@@ -1,0 +1,32 @@
+/*
+Theme Name: Bridge Child
+Theme URI: http://demo.qodeinteractive.com/bridge/
+Description: A child theme of Bridge Theme
+Author: Qode Interactive
+Author URI: http://www.qodethemes.com/
+Version: 1.0.0
+Template: bridge
+*/
+@import url("../bridge/style.css");
+
+#slider-1-slide-1-layer-1 {
+    font:'Open Sans', sans-serif;
+}
+
+span.slider-title-bold {
+    font-weight: 800;
+}
+
+.header_bottom.ct-h-1200 {
+    width:1200px;
+    margin:0 auto;
+}
+
+header .header_inner_left {
+    left:0 !important;
+}
+
+span.ct-font-30 {
+    font-size:30px;
+    line-height:26px;
+}
