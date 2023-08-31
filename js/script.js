@@ -1,8 +1,13 @@
 jQuery(document).ready(function(){
-//     var slider_1 = jQuery('#rev_slider_1_1 .rs-parallax-wrap')
-//     const screenWidth = window.innerWidth;
-//      if(screenWidth > 1200)
-//          var leftoffset = (screenWidth - 1200)/2
-//          slider_1.css('left',leftoffset)
-// console.log("helo")
+
+jQuery('.ct_slider_link_items').each(function(){
+            
+    jQuery(this).click(function(){
+        jQuery('.ct_slider_link_items').removeClass('clicked')
+        var current_img = jQuery(this).attr("data-src")
+        jQuery(this).addClass("clicked")
+        
+        jQuery('.ct_slider_link_items_img img').attr('src',current_img)
+    });
+})
 });

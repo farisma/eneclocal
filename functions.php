@@ -41,3 +41,4 @@ add_filter('upload_mimes', 'add_file_types_to_uploads');
 // add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
 
 
+include_once('sc_custom_image_slider.php');

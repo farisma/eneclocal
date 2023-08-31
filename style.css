@@ -17,10 +17,7 @@ span.slider-title-bold {
     font-weight: 800;
 }
 
-.header_bottom.ct-h-1200 {
-    width:1200px;
-    margin:0 auto;
-}
+
 
 header .header_inner_left {
     left:0 !important;
@@ -114,3 +111,176 @@ min-height:222px;
     border-bottom-color: rgba(255,255,255,0.5) !important;
     box-sizing: border-box;
 }
+.mobile_menu_button span {
+    color: #fff !important;
+}
+nav.mobile_menu ul li {
+    padding-left: 15px;
+}
+nav.mobile_menu ul li.active > a {
+  color: #08B199 !important;
+}
+
+.ct_slider_section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.ct_slider_section .ct_slider_1{
+    width:50%;
+    
+    padding-right:50px;
+}
+.ct_slider_section .ct_slider_2{
+    width:50%;
+    
+}
+.ct_slider_section .ct_slider_link_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width:555px;
+    width:90%;
+    border-radius:0px 8px 8px 0px;
+    transition: all ease-in-out .05s;
+    box-sizing: border-box;
+
+}
+.ct_slider_section .ct_slider_link_items.clicked {
+    border-left:4px solid #08B199;
+}
+.ct_slider_section .ct_slider_link_items {
+    background:#fff;
+    
+    background: #fff;
+    margin-bottom:15px;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+.ct_slider_section .ct_slider_link_items .ct_link_item_1 {
+    font-family:"Open Sans", Sans-serif;
+    font-weight:bold;
+    font-size:70px;
+    line-height:58px;
+    color: #08B199;
+    padding-right:8px;
+    padding-left:8px;
+}
+.ct_slider_section .ct_slider_link_items .ct_link_item_2 {
+    padding-right:25px;
+}
+.ct_slider_section .ct_slider_link_items .ct_link_item_2 p {
+    font-family:"Open Sans", Sans-serif;
+    font-weight:300;
+    font-size:15px;
+    line-height:21px;
+    color: #121A50;
+}
+
+.ct_slider_link_items_img {
+    position: relative;
+    width:100%;
+    transition: all ease-in-out .05s;
+}
+.ct_slider_link_items_img img{
+    /* position: absolute; */
+    width:100%;
+    height: 100%;
+    transition: all ease-in-out .05s;
+    /* top:0;
+    left:0; */
+}
+
+
+@media only screen and (min-width: 1200px) {
+.header_bottom.ct-h-1200 {
+  width:1200px;
+  margin:0 auto;
+}
+}
+@media only screen and (max-width: 1024px) {
+    header {
+        position: absolute !important;
+    }
+    header .header_bottom {
+        background: none !important;
+    }
+    .header_top  {
+      border: none !important;
+    }
+    .header_top .left {
+        display: none;
+    }
+    .logo_wrapper {
+        left:50px;
+        height: 75px !important;
+    }
+    .mobile_menu_button {
+        float:right;
+        height: 75px !important;
+    }
+
+    .ct-home-second {
+        margin-top:-45%;
+        padding-top:50%;
+    }
+    .ct-home-second .elementor-container .elementor-col-25.elementor-inner-column {
+        width:50% !important;
+    }
+    .ct-home-second .elementor-column-gap-default >.elementor-column > .elementor-element-populated {
+        margin:25px;
+    }
+    .ct-home-second .elementor-column-gap-default >.elementor-column > .elementor-element-populated >.elementor-element > .elementor-widget-container {
+        min-height:180px;
+    }
+    .ct-video-tn .elementor-widget-wrap .elementor-widget-container {
+        text-align:center;
+    }
+}
+
+@media only screen and (max-width: 768px) { 
+    .ct-home-second .elementor-container .elementor-col-25.elementor-inner-column {
+        width:100% !important;
+    }
+    .ct-home-second .elementor-column-gap-default >.elementor-column > .elementor-element-populated {
+        max-width:320px;
+        margin:25px auto;
+    }
+
+    .ct-mission-blocks-text {
+        max-width:80%;
+        margin:0 auto;
+    }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1200px) { 
+#rev_slider_1_1 .rs-parallax-wrap #slider-1-slide-1-layer-0 {
+    left:20px !important;
+    top:50px !important;
+}
+#rev_slider_1_1 .rs-parallax-wrap #slider-1-slide-1-layer-1 {
+    left:20px !important;
+    top:60px !important;
+}
+}
+@media only screen and (min-width: 1200px) and (max-width: 1366px) { 
+/* #rev_slider_1_1 .rs-parallax-wrap:nth-child(1) {
+    left:100px !important;
+    top:200px !important;
+} */
+
+#rev_slider_1_1 .rs-parallax-wrap #slider-1-slide-1-layer-0{
+font-size:40px !important;
+line-height:46px !important;
+left:100px !important;
+top:20px !important;
+}
+#rev_slider_1_1 .rs-parallax-wrap #slider-1-slide-1-layer-1 {
+    font-size:20px !important;
+    line-height:26px !important;
+    left:100px !important;
+    top:-50px !important;
+}
+}
+
+
+

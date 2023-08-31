@@ -60,16 +60,16 @@
 
                                 <nav class="main_menu drop_down <?php echo esc_attr($menu_position); ?>">
                                     <?php
-                                    // wp_nav_menu( array( 'theme_location' => 'top-navigation' ,
-                                    //     'container'  => '',
-                                    //     'container_class' => '',
-                                    //     'menu_class' => '',
-                                    //     'menu_id' => '',
-                                    //     'fallback_cb' => 'bridge_qode_top_navigation_fallback',
-                                    //     'link_before' => '<span>',
-                                    //     'link_after' => '</span>',
-                                    //     'walker' => new BridgeQodeType1WalkerNavMenu()
-                                    // ));
+                                    wp_nav_menu( array( 'theme_location' => 'top-navigation' ,
+                                        'container'  => '',
+                                        'container_class' => '',
+                                        'menu_class' => '',
+                                        'menu_id' => '',
+                                        'fallback_cb' => 'bridge_qode_top_navigation_fallback',
+                                        'link_before' => '<span>',
+                                        'link_after' => '</span>',
+                                        'walker' => new BridgeQodeType1WalkerNavMenu()
+                                    ));
                                     ?>
                                 </nav>
                                 <?php if($centered_logo) { ?>
