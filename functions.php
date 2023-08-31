@@ -6,6 +6,8 @@ if(!function_exists('bridge_qode_child_theme_enqueue_scripts')) {
 	Function bridge_qode_child_theme_enqueue_scripts() {
 		wp_register_style('bridge-childstyle', get_stylesheet_directory_uri() . '/style.css');
 		wp_enqueue_style('bridge-childstyle');
+		wp_register_script('bridge-childscript', get_stylesheet_directory_uri() . '/js/script.js',array('jquery'));
+		wp_enqueue_script('bridge-childscript');
 	}
 
 	add_action('wp_enqueue_scripts', 'bridge_qode_child_theme_enqueue_scripts', 11);
@@ -16,6 +18,14 @@ if(!function_exists('bridge_qode_child_theme_enqueue_scripts')) {
 add_filter( 'auto_update_theme', '__return_false' );
 add_filter( 'auto_update_plugin', '__return_false' );
 
+
+function add_file_types_to_uploads($file_types){
+    $new_filetypes = array();
+    $new_filetypes['svg'] = 'image/svg+xml';
+    $file_types = array_merge($file_types, $new_filetypes );
+    return $file_types;
+}
+add_filter('upload_mimes', 'add_file_types_to_uploads');
 
 // function add_google_fonts() {
     

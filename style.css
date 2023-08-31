@@ -30,3 +30,87 @@ span.ct-font-30 {
     font-size:30px;
     line-height:26px;
 }
+
+.ct-home-second {
+    margin-top:-5%;
+    padding-top:7%;
+    padding-bottom:90px;
+}
+
+.ct-home-second .elementor-column-gap-default >.elementor-column > .elementor-element-populated {
+    padding: 0 !important;
+    margin-right:10px;
+    
+}
+.ct-home-second .elementor-column-gap-default >.elementor-column > .elementor-element-populated >.elementor-element > .elementor-widget-container { 
+min-height:222px;
+}
+
+.ct-home-list li {
+    list-style:none;
+    position: relative;
+    padding-left:16px;
+
+}
+.ct-home-list li:before {
+    content:'';
+    position: absolute;
+    top:12px;
+    left:0px;
+    width:4px;
+    height:4px;
+    border-radius: 50%;
+    background: #121A50;
+
+}
+.ct-home-slider .elementor-widget-wrap .elementor-element .elementor-widget-container {
+     font-weight: 400;
+}
+.ct-home-slider .elementor-widget-wrap .elementor-element .elementor-widget-container h5, .ct-home-slider .elementor-widget-wrap .elementor-element .elementor-widget-container p {
+    color: #FFFFFF;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.ct-home-slider .elementor-widget-wrap .elementor-element .elementor-widget-container p {
+    font-weight: 400;
+}
+
+.ct-home-slider .elementor-column .elementor-element-populated .elementor-widget.elementor-widget-heading {
+    margin-bottom:0;
+}
+
+
+/* .qode_video_box .qode_video_image:hover .qode_video_box_button {
+    background-color: #fff;
+} */
+.qode_video_box .qode_video_image .qode_video_box_button_arrow {
+    border-left-color: #08B199;
+}
+.qode_video_box .qode_video_image:hover .qode_video_box_button_arrow {
+    border-left-color: #08B199;
+}
+
+/* #rev_slider_1_1 .rs-parallax-wrap {
+    left: calc(100%-1200)/2 !important;
+} */
+.ct-social-links { 
+    list-style: none;
+}
+.ct-social-links li {
+    list-style: none;
+    display: inline;
+    padding-left:6px;
+}
+.header_top {
+    background:none !important;
+}
+.header_top  {
+    background:none !important;
+    border: none;
+    border-bottom-width:1px !important;
+    border-bottom-style: solid !important;
+    border-bottom-color: rgba(255,255,255,0.5) !important;
+    box-sizing: border-box;
+}
